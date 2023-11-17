@@ -2,13 +2,11 @@
 """Square class function"""
 
 
-
 class Square():
     """square class"""
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """ Instantiation of class """
         for key, value in kwargs.items():
@@ -25,6 +23,7 @@ class Square():
     def __str__(self):
         """ returns a string representation """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """ Creates a square object """
